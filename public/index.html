@@ -22,11 +22,11 @@
     </head>
     <body class="m-0 w-screen min-h-screen bg-white">
         <header class="
-            absolute top-0 left-0 w-screen overflow-hidden pr-8 py-8 z-10
-            flex flex-row flex-nowrap items-center justify-between
+            absolute top-0 left-0 w-screen overflow-hidden lg:pr-8 py-8 z-10
+            flex flex-row flex-nowrap items-center justify-center lg:justify-between
         ">
-            <a href="/" class="text-white uppercase font-medium text-8xl ml-24">Space Place</a>
-            <nav class="flex flex-row flex-nowrap items-center">
+            <a href="/" class="text-white uppercase font-bold lg:font-medium text-3xl lg:text-4xl xl:text-8xl lg:ml-24">Space Place</a>
+            <nav class="hidden lg:flex flex-row flex-nowrap items-center">
                 <a 
                     href="#about-us"
                     class="
@@ -62,28 +62,30 @@
                         class="min-w-full min-h-full absolute top-0 right-0"
                     >
                 </img-shim>
-                <div class="px-24 py-44 block mx-auto relative">
+                <div class="px-8 lg:px-24 py-32 lg:py-44 block mx-auto relative">
                     <img 
                         src="/images/logo.svg" 
                         alt="Space Place logo: unlock your space"
-                        class="w-2/3 mb-24"
+                        class="w-full lg:w-2/3 mb-12 lg:mb-24"
                     >
                     <a 
                         href="#solutions"
                         class="
-                            text-white uppercase text-4xl
+                            text-white uppercase text-3xl lg:text-4xl
                             px-12 rounded-2xl bg-(--brand) h-12 mx-4
-                            inline-flex items-center
+                            w-full lg:w-auto
+                            whitespace-nowrap
+                            inline-flex items-center justify-center
                         "
                     >Learn more</a>
                 </div>
             </section>
             <section class="block w-full bg-(--brand) py-24 px-12">
                 <div class="block mx-auto max-w-full w-[1400px] text-white text-center">
-                    <h1 class="uppercase font-bold text-6xl">One Platform. Infinite Potential.</h1>
+                    <h1 class="uppercase font-bold text-3xl md:text-5xl lg:text-6xl">One Platform. Infinite Potential.</h1>
                     <div class="block mx-auto w-1/3 h-[2px] bg-white my-12"></div>
-                    <p class="text-2xl mb-4">Designed to scale effortlessly for companies that prioritize space planning and inventory management.</p>
-                    <p class="text-2xl">SPACE PLACE's modular platforfm empowers warehouse managers to securely optimize space and shelving through advanced planning and seamless integration tools. The modular nature of the platform allows you to choose the specific tools you need and scale as your business grows.</p>
+                    <p class="md:text-2xl mb-4">Designed to scale effortlessly for companies that prioritize space planning and inventory management.</p>
+                    <p class="md:text-2xl">SPACE PLACE's modular platforfm empowers warehouse managers to securely optimize space and shelving through advanced planning and seamless integration tools. The modular nature of the platform allows you to choose the specific tools you need and scale as your business grows.</p>
                 </div>
             </section>
             <section id="solutions" class="block w-full bg-(--brand) border-t-[5px] border-t-(--brand-alt) p-8 pt-14 relative">
@@ -91,16 +93,16 @@
                     <img 
                         src="/images/bg.jpg" 
                         alt="futuristic 3d warehouse blueprint"
-                        class="min-w-full min-h-full absolute bottom-0 right-0"
+                        class="min-w-full min-h-full hidden lg:inline-block absolute bottom-0 right-0"
                     >
                 </img-shim>
-                <div class="w-[1400px] max-w-full mx-auto grid grid-cols-2 gap-24 text-white">
+                <div class="w-[1400px] max-w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 text-white">
                     <div class="relative">
-                        <h3 class="block uppercase text-3xl font-medium ml-[19px]">Space Place</h3>
+                        <h3 class="block uppercase text-xl md:text-3xl font-medium ml-[19px]">Space Place</h3>
                         <div class="block border-l-3 border-l-(--brand-alt) pl-4 pb-8">
-                            <h2 class="block uppercase text-6xl font-bold mb-24">Visual</h2>
-                            <p class="uppercase text-2xl mb-12">Start planning today - download and see your plan come to live.</p>
-                            <ul class="text-2xl list-(--en-dash) pl-4">
+                            <h2 class="block uppercase text-3xl md:text-6xl font-bold mb-8 lg:mb-24">Visual</h2>
+                            <p class="uppercase md:text-2xl mb-12">Start planning today - download and see your plan come to live.</p>
+                            <ul class="md:text-2xl list-(--en-dash) pl-4">
                                 <li class="pl-4">Planogram Development (3D)</li>
                                 <li class="pl-4">PSA Viewer</li>
                                 <li class="pl-4">Shelf signage/label layout</li>
@@ -115,14 +117,14 @@
                         </div>
                     </div>
                     <div class="relative">
-                        <h3 class="block uppercase text-3xl font-medium ml-[19px]">Space Place</h3>
+                        <h3 class="block uppercase text-xl md:text-3xl font-medium ml-[19px]">Space Place</h3>
                         <div class="block border-l-3 border-l-(--brand-alt) pl-4 pb-8">
-                            <h2 class="block uppercase text-6xl font-bold mb-24">Connect</h2>
-                            <p class="uppercase text-2xl mb-12">Your collaborative approach to total software integration.</p>
-                            <ul class="text-2xl list-(--en-dash) pl-4">
+                            <h2 class="block uppercase text-3xl md:text-6xl font-bold mb-8 lg:mb-24">Connect</h2>
+                            <p class="uppercase md:text-2xl mb-12">Your collaborative approach to total software integration.</p>
+                            <ul class="md:text-2xl list-(--en-dash) pl-4">
                                 <li class="pl-4">
                                     Command Center
-                                    <ul class="text-2xl list-disc pl-4">
+                                    <ul class="md:text-2xl list-disc pl-4">
                                         <li class="ml-4">Real-Time Visibility of data and patterns</li>
                                         <li class="ml-4">Transforms massive data into actionable insights by leveraging Agentic Intelligence</li>
                                         <li class="ml-4">Volume and throughput monitoring</li>
@@ -137,28 +139,28 @@
             </section>
             <section class="block w-full bg-(--brand) py-24 px-12">
                 <div class="block mx-auto max-w-full w-[1400px] text-white text-center">
-                    <h1 class="font-bold text-6xl">TRUSTED and SECURE</h1>
+                    <h1 class="font-bold text-3xl md:text-5xl lg:text-6xl">TRUSTED and SECURE</h1>
                     <div class="block mx-auto w-1/3 h-[2px] bg-white my-12"></div>
-                    <p class="text-2xl">Our mission is empowering your business with a secure, intelligent platform architecture that unifies systems, optimize space, and drives operational excellence — while upholding the highest standards of data privacy and protection.</p>
+                    <p class="md:text-2xl">Our mission is empowering your business with a secure, intelligent platform architecture that unifies systems, optimize space, and drives operational excellence — while upholding the highest standards of data privacy and protection.</p>
                 </div>
             </section>
             <hr noshade class="w-full border-b-[5px] border-b-(--brand-alt)">
             <section class="block w-full bg-(--brand) py-24 px-12">
                 <div class="block mx-auto max-w-full w-[1400px] text-white text-center">
-                    <h1 class="font-bold text-6xl uppercase">About Us</h1>
+                    <h1 class="font-bold text-3xl md:text-5xl lg:text-6xl uppercase">About Us</h1>
                     <div class="block mx-auto w-1/3 h-[2px] bg-white my-12"></div>
-                    <p class="text-2xl">Coupled with years of industry knowledge and a drive to support greater efficiency and effectiveness in warehouse logistics and operations. SPACE PLACE works with our customers to understand their unique business needs and challenges - delivering the best in class solutions tailored to optimize your warehouse planning, logistics and operations.</p>
+                    <p class="md:text-2xl">Coupled with years of industry knowledge and a drive to support greater efficiency and effectiveness in warehouse logistics and operations. SPACE PLACE works with our customers to understand their unique business needs and challenges - delivering the best in class solutions tailored to optimize your warehouse planning, logistics and operations.</p>
                 </div>
                 <div class="block mx-auto mt-24 max-w-full w-[1400px] text-white text-center">
-                    <h3 class="text-2xl block mb-6 text-left">Management Team:</h3>
-                    <div class="grid grid-cols-4 gap-12">
-                        <div>
+                    <h3 class="text-2xl hidden lg:block mb-6 text-left">Management Team:</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                        <div class="place-self-center lg:place-self-start">
                             <img 
                                 src="/images/david.webp" 
                                 alt="a photo of David Replogle"
-                                class="rounded-4xl w-[200px] aspect-square mb-2 bg-white"
+                                class="rounded-4xl w-[200px] aspect-square mb-2 bg-white mx-auto md:ml-0"
                             >
-                            <p class="text-left">
+                            <p class="text-center md:text-left">
                                 David Replogle,
                                 <br>
                                 Co-Founder
@@ -166,13 +168,13 @@
                                 <a target="_blank" href="mailto:david@spaceplace.app">David@spaceplace.app</a>
                             </p>
                         </div>
-                        <div>
+                        <div class="place-self-center lg:place-self-start">
                             <img 
                                 src="/images/sam.webp" 
                                 alt="a photo of Sam Rhew"
-                                class="rounded-4xl w-[200px] aspect-square mb-2 bg-white"
+                                class="rounded-4xl w-[200px] aspect-square mb-2 bg-white mx-auto md:ml-0"
                             >
-                            <p class="text-left">
+                            <p class="text-center md:text-left">
                                 Sam Rhew,
                                 <br>
                                 Co-Founder
@@ -180,13 +182,13 @@
                                 <a target="_blank" href="mailto:sam@spaceplace.app">Sam@spaceplace.app</a>
                             </p>
                         </div>
-                        <div>
+                        <div class="place-self-center lg:place-self-start">
                             <img 
                                 src="/images/brian.webp" 
                                 alt="a photo of Brian Scott"
-                                class="rounded-4xl w-[200px] aspect-square mb-2 bg-white"
+                                class="rounded-4xl w-[200px] aspect-square mb-2 bg-white mx-auto md:ml-0"
                             >
-                            <p class="text-left">
+                            <p class="text-center md:text-left">
                                 Brian Scott,
                                 <br>
                                 Co-Founder
@@ -194,13 +196,13 @@
                                 <a target="_blank" href="mailto:brian@spaceplace.app">Brian@spaceplace.app</a>
                             </p>
                         </div>
-                        <div>
+                        <div class="place-self-center lg:place-self-start">
                             <img 
                                 src="/images/kyle.webp" 
                                 alt="a photo of Kyle Andrews"
-                                class="rounded-4xl w-[200px] aspect-square mb-2 bg-white"
+                                class="rounded-4xl w-[200px] aspect-square mb-2 bg-white mx-auto md:ml-0"
                             >
-                            <p class="text-left">
+                            <p class="text-center md:text-left">
                                 Kyle Andrews,
                                 <br>
                                 Senior Developer
@@ -212,7 +214,7 @@
                 </div>
             </section>
             <footer class="w-full border-t-[5px] border-t-(--brand-alt)">
-                <nav class="flex flex-row flex-nowrap items-center justify-end px-24 py-8 bg-(--brand-light)">
+                <nav class="hidden md:flex flex-row flex-nowrap items-center justify-center lg:justify-end px-24 py-8 bg-(--brand-light)">
                     <a 
                         href="#about-us"
                         class="
@@ -238,7 +240,7 @@
                         "
                     >Contact Us</a>
                 </nav>
-                <div class="block w-full p-24">
+                <div class="block w-full p-8 md:p-24">
                     <h2 class="uppercase text-(--brand) text-2xl mb-4 font-medium">Contact Info:</h2>
                     <p class="mr-auto pt-8 pr-8 inline-block border-t-2 border-t-(--brand-light) text-(--brand) text-xl">
                         Sam Rhew
