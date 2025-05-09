@@ -1,8 +1,8 @@
 {
   "scripts": {
     "build": "run-p build:*",
-    "build:tailwind": "npx @tailwindcss/cli -i ./tailwind.css -o ./public/tailwind.css --watch",
-    "build:serve": "serve ./public"
+    "build:tailwind": "npx @tailwindcss/cli -i ./tailwind.css -o ./docs/tailwind.css --watch",
+    "build:serve": "serve ./docs"
   },
   "devDependencies": {
     "@tailwindcss/cli": "4.x.x",
