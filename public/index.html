@@ -6,40 +6,74 @@
 
         <title>Space Place</title>
 
+        <style>
+            :root {
+                --brand: #1d2e42;
+
+                --hero-ar: 5/3;
+            }
+        </style>
+
         <link rel="stylesheet" href="/tailwind.css?v=1">
     </head>
     <body class="m-0 w-screen min-h-screen bg-white">
         <header class="
-            absolute top-0 left-0 w-screen overflow-hidden p-8
+            absolute top-0 left-0 w-screen overflow-hidden pr-8 py-8 z-10
             flex flex-row flex-nowrap items-center justify-between
         ">
-            <a href="/" class="text-white uppercase font-medium text-7xl">Space Place</a>
+            <a href="/" class="text-white uppercase font-medium text-8xl ml-24">Space Place</a>
             <nav class="flex flex-row flex-nowrap items-center">
                 <a 
                     href="#about-us"
                     class="
                         text-white font-semibold uppercase
-                        px-8 rounded-full bg-[#1d2e42] h-6 mx-4
+                        px-8 rounded-full bg-(--brand) h-8 mx-4
+                        flex items-center
                     "
                 >About Us</a>
                 <a 
                     href="#solutions"
                     class="
                         text-white font-semibold uppercase
-                        px-8 rounded-full bg-[#1d2e42] h-6 mx-4
+                        px-8 rounded-full bg-(--brand) h-8 mx-4
+                        flex items-center
                     "
                 >Solutions</a>
                 <a 
                     href="#contact-us"
                     class="
                         text-white font-semibold uppercase
-                        px-8 rounded-full bg-[#1d2e42] h-6 mx-4
+                        px-8 rounded-full bg-(--brand) h-8 mx-4
+                        flex items-center
                     "
                 >Contact Us</a>
             </nav>
         </header>
         <main class="block w-full">
-            <section id="hero"></section>
+            <section id="hero" class="bg-(--brand) aspect-(--hero-ar) relative block w-full">
+                <img-shim class="absolute top-0 right-0 overflow-hidden w-full h-full">
+                    <img 
+                        src="/images/bg.jpg" 
+                        alt="futuristic 3d warehouse blueprint"
+                        class="min-w-full min-h-full absolute top-0 right-0"
+                    >
+                </img-shim>
+                <div class="px-24 py-44 block mx-auto relative">
+                    <img 
+                        src="/images/logo.svg" 
+                        alt="Space Place logo: unlock your space"
+                        class="w-2/3 mb-24"
+                    >
+                    <a 
+                        href="#solutions"
+                        class="
+                            text-white uppercase text-4xl
+                            px-12 rounded-2xl bg-(--brand) h-12 mx-4
+                            inline-flex items-center
+                        "
+                    >Learn more</a>
+                </div>
+            </section>
         </main>
     </body>
 </html>
