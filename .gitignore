@@ -1,4 +1,4 @@
 node_modules
-./public/tailwind.css
+public/tailwind.css
 public/images/*
 !public/images/.gitkeep

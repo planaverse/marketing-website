@@ -10,6 +10,7 @@
             :root {
                 --brand: #1d2e42;
                 --brand-alt: #8cc63f;
+                --brand-light: #00aeef;
                 --em-dash: '—';
                 --en-dash: '–';
 
@@ -211,6 +212,42 @@
                 </div>
             </section>
             <footer class="w-full border-t-[5px] border-t-(--brand-alt)">
+                <nav class="flex flex-row flex-nowrap items-center justify-end px-24 py-8 bg-(--brand-light)">
+                    <a 
+                        href="#about-us"
+                        class="
+                            text-white font-semibold uppercase
+                            px-8 rounded-full bg-(--brand) h-8 mx-4
+                            flex items-center
+                        "
+                    >About Us</a>
+                    <a 
+                        href="#solutions"
+                        class="
+                            text-white font-semibold uppercase
+                            px-8 rounded-full bg-(--brand) h-8 mx-4
+                            flex items-center
+                        "
+                    >Solutions</a>
+                    <a 
+                        href="#contact-us"
+                        class="
+                            text-white font-semibold uppercase
+                            px-8 rounded-full bg-(--brand) h-8 mx-4
+                            flex items-center
+                        "
+                    >Contact Us</a>
+                </nav>
+                <div class="block w-full p-24">
+                    <h2 class="uppercase text-(--brand) text-2xl mb-4 font-medium">Contact Info:</h2>
+                    <p class="mr-auto pt-8 pr-8 inline-block border-t-2 border-t-(--brand-light) text-(--brand) text-xl">
+                        Sam Rhew
+                        <br>
+                        <a target="_blank" href="mailto:sam@spaceplace.app">Sam@spaceplace.app</a>
+                        <br>
+                        <a target="_blank" href="tel:+16164855539">616.485.5539</a>
+                    </p>
+                </div>
             </footer>
         </main>
     </body>
